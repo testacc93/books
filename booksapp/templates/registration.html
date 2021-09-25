@@ -46,23 +46,7 @@
        document.getElementById('success').style.display = 'none'
    }
 
-    $(document).ready(function(){
-        $('#login-button').click(function(){
-            $.ajax({
-                url: "{% url 'home' %}",
-                method: "post",
-                //convetr to dic
-                dataType: "json",
-                data: {
-                    "dataaa": "jas",
-                },
-                success: function(data){
-                    console.log(data)
-                }
-            })
-        })
-    })
-
+    
 </script>
 
 </html>

@@ -41,7 +41,6 @@ def home(request):
         password = request.POST.get('password')
         print("username", username)
         print("username", password)
-
         if username != "":
             if models.User.objects.filter(username=username).exists():
                 if password != "":
